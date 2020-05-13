@@ -1,12 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-image: url('https://image.freepik.com/vetores-gratis/design-de-fundo-moderno-azul-3d_53876-88247.jpg');
-    background-size: auto 150vh;
+    background-size: auto 180vh;
     font-family: roboto slab;
     height: 100vh;
+    font-size: 12px;
     }
   
+/* se a tela tiver pelo menos 400 px vai carregar estes estilos */    
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}    
+
   .menu {
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   .menu li {
@@ -18,6 +49,11 @@ body {
     justify-content: space-around;
   }
   
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+  }
+
   a {
     color: teal;
     text-decoration: none;
@@ -33,7 +69,15 @@ body {
     text-align:center;
   }
   
+  .site-title {
+    font-size: 4em;
+  }
+
   .site-subtitle {
     font-style: italic;
   }
   
+  .img-portfolio {
+    width: 180px;
+    height: 180px;
+  }
