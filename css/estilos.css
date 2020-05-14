@@ -7,7 +7,7 @@
 body {
     background-image: url('https://image.freepik.com/vetores-gratis/design-de-fundo-moderno-azul-3d_53876-88247.jpg');
     background-size: auto 180vh;
-    font-family: roboto slab;
+    font-family: 'Balsamiq Sans', cursive;
     height: 100vh;
     font-size: 12px;
     }
@@ -22,7 +22,7 @@ body {
 /* breakpoint */
 @media (min-width: 600px) {
   body {
-    font-size: 18px;;
+    font-size: 18px;
   }
 }
 
@@ -71,13 +71,64 @@ header{
   
   .site-title {
     font-size: 4em;
+    font-family: 'Amatic SC', cursive;
   }
 
   .site-subtitle {
     font-style: italic;
+    font-family: 'Roboto Slab', serif;
   }
   
-  .img-portfolio {
-    width: 180px;
-    height: 180px;
+  .portfolio h2 {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    margin-bottom: 1.5em;
+    font-size: 2em;
   }
+
+  .portfolio {
+    padding: 2em;
+    height: 100vh;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 300px 350px;
+  }
+
+
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: auto;
+    }
+  }
+
+  @media (min-width: 880px) {
+    .portfolio .grid {
+      grid-template-columns: auto auto;
+      align-items: center;
+      justify-content: center;
+      height: calc (100vh - 8em - 48px) ;
+    }
+  }
+
+/* 
+  @media (min-width: ) {
+    .portfolio .grid {
+      grid-template-columns: 300px 350px;
+    }
+  } */
+
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .img-portfolio {
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+    border-radius: 10%;
+  }
+
