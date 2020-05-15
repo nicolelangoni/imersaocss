@@ -9,23 +9,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans&family=Roboto+Slab:wght@300;400;500&display=swap"
         rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b9e4b1714d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portifólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="titulo">
             <h1 class="site-title">Nicole Langoni</h1>
             <h2 class="site-subtitle">Analista Digital</h2>
         </div>
     </header>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2>Portfólio</h2>
 
         <div class="grid">
@@ -47,8 +49,20 @@
                     alt="Projetos pessoais">
                 <figcaption>Personal Projects</figcaption>
             </figure>
+    </section>
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/nicolelangoni">
+                <i class="fab fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/nicole-langoni/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:nicolangoni@gmail.com">
+                <i class="far fa-envelope-open"></i>
+            </a>
         </div>
-
     </section>
 </body>
 
