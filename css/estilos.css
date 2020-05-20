@@ -99,7 +99,8 @@ header{
     font-family: 'Roboto Slab', serif;
   }
   
-  .contato,
+  .sobre h2,
+  .contato h2,
   .portfolio h2 {
     font-family: 'Roboto Slab', serif;
     color: black;
@@ -107,10 +108,48 @@ header{
     font-size: 2em;
   }
   
+  .sobre,
   .contato,
   .portfolio {
     padding: 2em;
     min-width: 100vh;
+  }
+
+  @media (min-width: 1200px) {  
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .sobra a {
+    color: black;
+  }
+
+  .sobre .avatar {
+    margin-right: 2em;
+  }
+
+  .sobre .avatar img {
+    float: right;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+  }
+
+  @media (min-width: 560px) {
+    .sobre .avatar img {
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
+  }
+
+  .sobre p{
+    color: black;
+    margin-bottom: 1.4em;
+    text-indent: 1.4em;
+    text-align: justify;
   }
 
   .portfolio .grid {
@@ -118,7 +157,6 @@ header{
     gap: 2em;
     grid-template-columns: 300px 350px;
   }
-
 
   @media (min-width: 560px) {
     .portfolio .grid {
@@ -151,12 +189,20 @@ header{
     height: 240px;
     object-fit: cover;
     object-position: left bottom;
-    border-radius: 10%;
     transition: transform 500ms;
   }
 
-  .img-portfolio:hover {
+  /* .img-portfolio:hover {
     transform: scale(1.2) rotate(-1deg);
+  }  */
+
+  .card {
+    position: relative;
+  }
+
+  .card-front, 
+  .card-back {
+    position: absolute;
   }
 
 .contato .icons {

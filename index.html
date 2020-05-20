@@ -16,7 +16,7 @@
 <body>
     <header>
         <nav class="menu">
-            <ul>
+            <ul class="container">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Portifólio</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -27,30 +27,103 @@
             <h2 class="site-subtitle">Analista Digital</h2>
         </div>
     </header>
-    <section class="portfolio" id="portfolio">
+    <section class="sobre container">
+        <h2>Sobre</h2>
+
+        <figure class="avatar">
+            <img src="https://scontent.fpoa11-1.fna.fbcdn.net/v/t1.0-9/49771572_1850264945102138_5833281086569840640_n.jpg?_nc_cat=108&_nc_sid=85a577&_nc_oc=AQkqBuASydjTynzvv_TG-wTX95mYmGVrCLIuX1bwcY0jCNMRcgYSrFF2H2K8lbc65Qg&_nc_ht=scontent.fpoa11-1.fna&oh=44e5b82628774aab1106655c8349f229&oe=5EE88D6C"
+                alt="Nicole Langoni">
+        </figure>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit sunt culpa, voluptas commodi
+            iusto, inventore quas obcaecati unde, nulla exercitationem tempore eveniet. Dolores non quaerat animi soluta
+            perspiciatis consequatur?
+        </p>
+
+        <p>
+            Nemo, debitis temporibus dignissimos sed neque eum non iure veritatis quae repudiandae est modi aperiam
+            corrupti ratione nam illum quod tenetur, rerum, laudantium fugiat. Omnis tenetur esse quos dolor dolorum.
+        </p>
+
+        <p>
+            Ipsam sapiente voluptatibus neque? Aperiam corporis quaerat provident doloribus voluptatem aliquam mollitia
+            enim dolore harum distinctio, sit reiciendis ipsam ipsa tempore sint atque nostrum maxime labore quidem!
+            Earum, distinctio reprehenderit!
+        </p>
+
+        <p>
+            At rem cum sunt obcaecati, veritatis aliquam iusto voluptatum libero aspernatur, vero quae, soluta ipsam
+            unde? Voluptatem neque ab nihil facilis itaque sapiente, eum nobis autem quisquam laudantium provident
+            quasi!
+        </p>
+
+        <p>
+            At rem cum sunt obcaecati, veritatis aliquam iusto voluptatum libero aspernatur, vero quae, soluta ipsam
+            unde? Voluptatem neque ab nihil facilis itaque sapiente, eum nobis autem quisquam laudantium provident
+            quasi!
+        </p>
+
+        <p>
+            At rem cum sunt obcaecati, veritatis aliquam iusto voluptatum libero aspernatur, vero quae, soluta ipsam
+            unde? Voluptatem neque ab nihil facilis itaque sapiente, eum nobis autem quisquam laudantium provident
+            quasi!
+        </p>
+        <p>
+            Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css"> Imersão CSS da Alura</a>
+            ;D
+        </p>
+
+    </section>
+    <section class="portfolio" id="portfolio container">
         <h2>Portfólio</h2>
 
         <div class="grid">
-            <figure>
-                <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
-                    alt="eCommerce">
-                <figcaption>Comércio Eletrônico</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-                <figcaption>Mobile</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-                <figcaption>Web design</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-                    alt="Projetos pessoais">
-                <figcaption>Personal Projects</figcaption>
-            </figure>
+
+            <div class="card">
+                <figure class="card-front">
+                    <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
+                        alt="eCommerce">
+                    <figcaption>Comércio Eletrônico</figcaption>
+                </figure>
+                <div class="card-back">
+                    Oi eu sou a parte de trás ;D
+                </div>
+            </div>
+
+            <div class="card">
+                <figure class="card-front">
+                    <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+                    <figcaption>Mobile</figcaption>
+                </figure>
+                <div class="card-back">
+                    Oi eu sou a parte de trás ;D
+                </div>
+            </div>
+            
+            <div class="card">
+                <figure class="card-front">
+                    <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+                    <figcaption>Web design</figcaption>
+                </figure>
+                <div class="card-back">
+                    Oi eu sou a parte de trás ;D
+                </div>
+            </div>
+
+            <div class="card">
+                <figure class="card-front">
+                    <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+                        alt="Projetos pessoais">
+                    <figcaption>Personal Projects</figcaption>
+                </figure>
+                <div class="card-back">
+                    Oi eu sou a parte de trás ;D
+                </div>
+            </div>
+         
     </section>
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
         <h2>Contato</h2>
         <div class="grid icons">
             <a target="_blank" href="https://github.com/nicolelangoni">
